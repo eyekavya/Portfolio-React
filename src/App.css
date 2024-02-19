@@ -1,0 +1,13 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1c1b21;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

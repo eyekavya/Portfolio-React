@@ -1,0 +1,62 @@
+import styled from "styled-components";
+
+export const StyledNav = styled.section`
+  max-width: 1100px;
+  max-height: 80px;
+  width: 100%;
+  margin: 0 auto;
+
+  .nav-container {
+    margin: 3rem 0;
+    justify-content: space-between;
+  }
+  .logo-container {
+    display: flex;
+    width: 3rem;
+    position: relative;
+
+    div {
+      cursor: pointer;
+    }
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  .smiley-green,
+  .smiley-yellow {
+    position: absolute;
+    display: none;
+  }
+
+  .smiley-green {
+    left: -3.5rem;
+  }
+
+  .smiley-yellow {
+    left: 3.5rem;
+  }
+
+  .logo-container:hover {
+    .smiley-green,
+    .smiley-yellow {
+      display: block;
+    }
+  }
+
+  .nav-items {
+    gap: 4rem;
+
+    div {
+      cursor: pointer;
+    }
+
+    p {
+      color: #8ad2ff;
+      font-size: 14px;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+`;
