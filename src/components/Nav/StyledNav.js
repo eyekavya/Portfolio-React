@@ -54,7 +54,7 @@ export const StyledNav = styled.section`
 
     p {
       color: #8ad2ff;
-      font-size: 14px;
+      font-size: 16px;
       font-family: "Work Sans", sans-serif;
       font-weight: 500;
     }

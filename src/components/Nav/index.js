@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledNav } from "./StyledNav";
+import CustomRoughNotation from "../CustomRoughNotation";
 
 function Nav() {
+  const [showAnnotation, setShowAnnotation] = useState({
+    about: false,
+    skills: false,
+    projects: false,
+    contacts: false,
+  });
+
   return (
     <StyledNav>
       <div className="nav-container flex-row">
@@ -21,16 +29,64 @@ function Nav() {
         </div>
         <div className="nav-items flex-row">
           <div>
-            <p>About</p>
+            <p
+              onMouseEnter={() => {
+                setShowAnnotation({ ...showAnnotation, about: true });
+              }}
+              onMouseLeave={() => {
+                setShowAnnotation({ ...showAnnotation, about: false });
+              }}
+            >
+              <CustomRoughNotation
+                text="About"
+                showAnnotation={showAnnotation.about}
+              />
+            </p>
           </div>
           <div>
-            <p>Skills</p>
+            <p
+              onMouseEnter={() => {
+                setShowAnnotation({ ...showAnnotation, skills: true });
+              }}
+              onMouseLeave={() => {
+                setShowAnnotation({ ...showAnnotation, skills: false });
+              }}
+            >
+              <CustomRoughNotation
+                text="Skills"
+                showAnnotation={showAnnotation.skills}
+              />
+            </p>
           </div>
           <div>
-            <p>Projects</p>
+            <p
+              onMouseEnter={() => {
+                setShowAnnotation({ ...showAnnotation, projects: true });
+              }}
+              onMouseLeave={() => {
+                setShowAnnotation({ ...showAnnotation, projects: false });
+              }}
+            >
+              <CustomRoughNotation
+                text="Projects"
+                showAnnotation={showAnnotation.projects}
+              />
+            </p>
           </div>
           <div>
-            <p>Contact</p>
+            <p
+              onMouseEnter={() => {
+                setShowAnnotation({ ...showAnnotation, contacts: true });
+              }}
+              onMouseLeave={() => {
+                setShowAnnotation({ ...showAnnotation, contacts: false });
+              }}
+            >
+              <CustomRoughNotation
+                text="Contacts"
+                showAnnotation={showAnnotation.contacts}
+              />
+            </p>
           </div>
         </div>
       </div>
