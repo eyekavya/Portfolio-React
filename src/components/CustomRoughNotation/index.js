@@ -9,7 +9,8 @@ function CustomRoughNotation({ text, showAnnotation, type = "underline" }) {
         <RoughNotation
           type={type}
           show={showAnnotation}
-          animationDuration={300}
+          animationDuration={500}
+          strokeWidth={3}
         >
           {text}
         </RoughNotation>
