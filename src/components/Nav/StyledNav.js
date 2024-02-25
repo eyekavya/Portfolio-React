@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.section`
-  max-width: 1100px;
   max-height: 80px;
   width: 100%;
-  margin: 0 auto;
 
   .nav-container {
     margin: 3rem 0;

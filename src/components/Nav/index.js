@@ -11,7 +11,7 @@ function Nav() {
   });
 
   return (
-    <StyledNav>
+    <StyledNav className="wrapper">
       <div className="nav-container flex-row">
         <div className="logo-container">
           <div className="smiley-green">
