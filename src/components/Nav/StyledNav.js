@@ -5,7 +5,7 @@ export const StyledNav = styled.section`
   width: 100%;
 
   .nav-container {
-    margin: 3rem 0;
+    margin: 1rem 0;
     justify-content: space-between;
   }
   .logo-container {

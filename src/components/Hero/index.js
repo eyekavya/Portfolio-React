@@ -3,8 +3,8 @@ import { StyledHero } from "./StyledHero";
 
 function Hero() {
   return (
-    <StyledHero className="wrapper">
-      <div className="hero-box-parent">
+    <StyledHero>
+      <div className="wrapper hero-box-parent">
         <div>
           <div className="hello hero-box-general">Hello there</div>
           <div className="iam hero-box-general">I am</div>
