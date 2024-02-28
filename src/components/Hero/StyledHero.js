@@ -1,18 +1,26 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
+  background-image: url(/images/magicpattern.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
   .hero-box-parent {
     width: max-content;
-    margin: 0 auto;
+    min-height: 75%;
     display: flex;
     flex-direction: row;
-    margin-top: 15rem;
+    align-items: center;
   }
+
   .hero-box-general {
     color: #1c1b21;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-align: center;
+    border-bottom: 8px solid #3434349e;
   }
   .hello {
     max-height: 123px;

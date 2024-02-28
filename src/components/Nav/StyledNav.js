@@ -3,9 +3,12 @@ import styled from "styled-components";
 export const StyledNav = styled.section`
   max-height: 80px;
   width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
 
   .nav-container {
-    margin: 3rem 0;
+    margin: 1rem 0;
     justify-content: space-between;
   }
   .logo-container {
