@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledHero } from "./StyledHero";
+import HeroTagline from "../HeroTagline";
 
 function Hero() {
   return (
@@ -16,6 +17,7 @@ function Hero() {
           <div className="kavya hero-box-general">Kavya</div>
         </div>
       </div>
+      <HeroTagline />
     </StyledHero>
   );
 }

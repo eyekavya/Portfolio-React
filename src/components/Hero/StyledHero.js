@@ -5,11 +5,11 @@ export const StyledHero = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 
   .hero-box-parent {
     width: max-content;
-    height: calc(100vh - 70.4px);
-    margin: 0 auto;
+    min-height: 75%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,6 +20,7 @@ export const StyledHero = styled.section`
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-align: center;
+    border-bottom: 8px solid #3434349e;
   }
   .hello {
     max-height: 123px;
