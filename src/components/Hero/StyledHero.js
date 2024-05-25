@@ -59,8 +59,27 @@ export const StyledHero = styled.section`
     top: 5rem;
     right: 3rem;
   }
+
   .hero-smiley {
     position: relative;
     left: 7rem;
+    animation: rotation 5s infinite linear;
+    width: 9rem;
+    /* transform: rotate(-63deg); */
+  }
+
+  @keyframes rotation {
+    15% {
+      transform: rotate(20deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(-50deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 `;
