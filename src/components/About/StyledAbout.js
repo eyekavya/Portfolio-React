@@ -10,6 +10,7 @@ export const StyledAbout = styled.section`
     font-weight: 500;
     color: #ababab;
     text-align: justify;
+    line-height: 1.6;
   }
   .desc-container img {
     width: 4rem;

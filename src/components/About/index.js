@@ -1,5 +1,7 @@
 import React from "react";
 import { StyledAbout } from "./StyledAbout";
+import CustomRoughNotation from "../CustomRoughNotation";
+import { RoughNotationGroup } from "react-rough-notation";
 
 function About() {
   return (
@@ -7,9 +9,32 @@ function About() {
       <div className="about flex-row wrapper">
         <div className="desc-container">
           <p>
-            I am a creative Front-end Web Developer & Web Designer based in
-            India, fueled by ideas and coffee. In the world of code and pixels,
-            I bring creativity to life.
+            <RoughNotationGroup show={true}>
+              I am a creative
+              <CustomRoughNotation
+                text=" Front-end Web Developer "
+                color="#F9D34C"
+                padding={4}
+                order={1}
+              />
+              &
+              <CustomRoughNotation
+                text=" Web Designer "
+                color="#F9D34C"
+                padding={4}
+                order={2}
+              />
+              based in India, fueled by ideas and coffee. In the world of code
+              and pixels, I bring
+              <CustomRoughNotation
+                text=" creativity "
+                type="circle"
+                color="#F9D34C"
+                // padding={4}
+                order={3}
+              />
+              to life.
+            </RoughNotationGroup>
           </p>
           <p>
             Currently, a Frontend Developer at{" "}
