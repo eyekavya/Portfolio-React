@@ -9,8 +9,9 @@ export const StyledAbout = styled.section`
     font-size: 3rem;
     font-weight: 500;
     color: #ababab;
+    font-family: "Montserrat", sans-serif;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.4;
   }
   .desc-container img {
     width: 4rem;

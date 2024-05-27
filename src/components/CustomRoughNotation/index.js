@@ -5,7 +5,7 @@ import { RoughNotation } from "react-rough-notation";
 function CustomRoughNotation({
   type = "underline",
   showAnnotation = false,
-  animationDuration = 700,
+  animationDuration = 500,
   strokeWidth = 3,
   animate = true,
   text = "",
@@ -13,7 +13,8 @@ function CustomRoughNotation({
   iterations = 2,
   padding = 5,
   order = "1",
-  brackets,
+  brackets = "right",
+  multiline = false,
 }) {
   return (
     <RoughNotation
@@ -27,6 +28,7 @@ function CustomRoughNotation({
       padding={padding}
       order={order}
       brackets={brackets}
+      multiline={multiline}
     >
       {text}
     </RoughNotation>
