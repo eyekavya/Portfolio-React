@@ -14,15 +14,15 @@ function About() {
               <CustomRoughNotation
                 text=" Front-end Web Developer "
                 color="#F9D34C"
-                padding={4}
                 order={1}
+                multiline={true}
               />
               &
               <CustomRoughNotation
                 text=" Web Designer "
                 color="#F9D34C"
-                padding={4}
                 order={2}
+                multiline={true}
               />
               based in India, fueled by ideas and coffee. In the world of code
               and pixels, I bring
@@ -30,7 +30,6 @@ function About() {
                 text=" creativity "
                 type="circle"
                 color="#F9D34C"
-                // padding={4}
                 order={3}
               />
               to life.
