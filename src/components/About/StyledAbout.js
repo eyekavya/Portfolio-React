@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   .about {
     gap: 2rem;
-    margin: 20rem auto;
+    height: 100vh;
+    margin: 0 auto;
   }
   .desc-container p {
     font-size: 3rem;
