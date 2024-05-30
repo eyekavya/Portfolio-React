@@ -6,6 +6,7 @@ export const StyledSectionHeading = styled.section`
     position: relative;
     transform: rotate(-6deg);
     margin: 0 auto;
+    margin-bottom: 12rem;
   }
 
   .heading {
