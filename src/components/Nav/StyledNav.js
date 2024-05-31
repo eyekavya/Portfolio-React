@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledNav = styled.section`
   max-height: 80px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   right: 0;
 

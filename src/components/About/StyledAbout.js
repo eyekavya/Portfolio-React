@@ -9,7 +9,7 @@ export const StyledAbout = styled.section`
   .desc-container p {
     font-size: 3rem;
     font-weight: 500;
-    color: #ababab;
+    color: #fdf6ee;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
     line-height: 1.4;

@@ -1,48 +1,142 @@
-import React from "react";
+import React, { useState } from "react";
 import parse from "html-react-parser";
 import { StyledSkill } from "./StyledSkill";
 import SectionHeading from "../SectionHeading";
 
 function Skill() {
+  const [skillIndex, setSkillIndex] = useState(0);
+  let logoArray = [
+    "react-logo.svg",
+    "redux-logo.svg",
+    "htmlcssjs-logo.svg",
+    "sass-logo.svg",
+    "mui-logo.svg",
+    "antd-logo.svg",
+    "bootstrap-logo.svg",
+    "git-logo.svg",
+    "figma-logo.svg",
+  ];
+
+  let skillArray = [
+    {
+      title: "ReactJS",
+      desc: `From webpages to SPAs to android apps, ReactJS got it all. The
+  declarative component-based approach makes debugging a child's play.`,
+      for: "Frontend development",
+      classNames: ["dot-blue", "dot-blue", "dot-blue", "dot-blue", "dot-grey"],
+    },
+    {
+      title: "ReduxJS",
+      desc: `Features like state persistence, state predictability, time-travel debugging and more, makes ReduxJS a great companion for ReactJS.`,
+      for: "State management",
+      classNames: ["dot-blue", "dot-blue", "dot-blue", "dot-blue", "dot-grey"],
+    },
+    {
+      title: "HTML/CSS/JS",
+      desc: `The base foundation of majority web-frameworks, this trio rules the client side of web applications, with or without frameworks.`,
+      for: "Frontend development",
+      classNames: [
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue-grey",
+      ],
+    },
+    {
+      title: "Sass",
+      desc: `A dynamic CSS extension that simplifies and enhances stylesheets for efficient and maintainable web development.`,
+      for: "UI Design",
+      classNames: ["dot-blue", "dot-blue", "dot-blue", "dot-blue", "dot-grey"],
+    },
+    {
+      title: "Material UI",
+      desc: `React components with Google's Material Design, providing a sleek and consistent UI for faster and easier web development.`,
+      for: "UI Design",
+      classNames: ["dot-blue", "dot-blue", "dot-blue", "dot-blue", "dot-grey"],
+    },
+    {
+      title: "Ant Design",
+      desc: `A UI design language and React UI library that contains easy-to-use React components that are useful for building interactive user interfaces.`,
+      for: "UI Design",
+      classNames: ["dot-blue", "dot-blue", "dot-blue", "dot-blue", "dot-grey"],
+    },
+    {
+      title: "Bootstrap",
+      desc: `A front-end framework, provides a collection of HTML, CSS, and JS components and tools that enable developers to build responsive websites with ease.`,
+      for: "UI Design",
+      classNames: [
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue-grey",
+      ],
+    },
+    {
+      title: "Git",
+      desc: `A free and open-source version control system used to track changes in the source code, enabling multiple developers to work together.`,
+      for: "Version Control",
+      classNames: [
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue-grey",
+      ],
+    },
+    {
+      title: "Figma",
+      desc: `A cloud based UI/UX design tool with code-generation and interactive prototyping capabilities that’s used to design apps, screens and vector illustrations.`,
+      for: "Prototypes",
+      classNames: [
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue",
+        "dot-blue-grey",
+      ],
+    },
+  ];
   return (
     <StyledSkill>
       <div className="skill wrapper">
         <SectionHeading headingText={parse(`Yes, I do <br /> all this! `)} />
         <div className="skill-container">
           <div className="skill-main  flex-row">
-            <img src="/images/skill-logo/react-logo.svg" alt="ReactJS logo" />
+            <img
+              src={`/images/skill-logo/${logoArray[skillIndex]}`}
+              alt="ReactJS logo"
+            />
             <div className="skill-desc">
-              <h2>ReactJS</h2>
-              <p>
-                From webpages to SPAs to android apps, ReactJS got it all. The
-                declarative component-based approach makes debugging a child's
-                play.
-              </p>
+              <h2>{skillArray[skillIndex].title}</h2>
+              <p className="skillDesc">{skillArray[skillIndex].desc}</p>
               <div className="skill-det">
-                <p>For: Frontend development</p>
+                <p>For: {skillArray[skillIndex].for}</p>
                 <div className="skill-level flex-row">
                   <p>Level:</p>
                   <div className="dot-group flex-row">
-                    <div className="dot dot-blue"></div>
-                    <div className="dot dot-blue"></div>
-                    <div className="dot dot-blue"></div>
-                    <div className="dot dot-blue"></div>
-                    <div className="dot dot-grey"></div>
+                    {skillArray[skillIndex].classNames.map((e) => {
+                      return <div className={`dot ${e}`}></div>;
+                    })}
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="logo-group flex-row">
-            <img src="images/skill-logo/react-logo.svg" alt="" />
-            <img src="images/skill-logo/redux-logo.svg" alt="" />
-            <img src="images/skill-logo/htmlcssjs-logo.svg" alt="" />
-            <img src="images/skill-logo/sass-logo.svg" alt="" />
-            <img src="images/skill-logo/mui-logo.svg" alt="" />
-            <img src="images/skill-logo/antd-logo.svg" alt="" />
-            <img src="images/skill-logo/bootstrap-logo.svg" alt="" />
-            <img src="images/skill-logo/git-logo.svg" alt="" />
-            <img src="images/skill-logo/figma-logo.svg" alt="" />
+            {logoArray.map((e, i) => {
+              return (
+                <img
+                  src={`images/skill-logo/${e}`}
+                  alt=""
+                  onClick={() => {
+                    setSkillIndex(i);
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
