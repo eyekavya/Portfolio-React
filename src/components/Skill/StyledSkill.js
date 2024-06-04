@@ -207,8 +207,14 @@ export const StyledSkill = styled.section`
   .logo-group {
     justify-content: space-between;
   }
+
   .logo-group img {
     width: 8rem;
     cursor: pointer;
+    filter: grayscale(1);
+  }
+
+  .logo-active {
+    filter: grayscale(0) !important;
   }
 `;

@@ -134,6 +134,7 @@ function Skill() {
                   onClick={() => {
                     setSkillIndex(i);
                   }}
+                  className={i === skillIndex ? "logo-active" : ""}
                 />
               );
             })}
