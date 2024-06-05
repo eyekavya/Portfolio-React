@@ -43,7 +43,7 @@ function About() {
           </p>
         </div>
         <div className="photo-container">
-          <img src="/images/me-blob-strokes-final.svg" alt="My Snap" />
+          <img src="/images/kavya/me-blob-strokes-final.svg" alt="My Snap" />
         </div>
       </div>
     </StyledAbout>

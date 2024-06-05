@@ -12,7 +12,7 @@ function Hero() {
         </div>
         <div>
           <div className="hero-smiley">
-            <img src="/images/hero-smiley.svg" alt="Beige Smiley" />
+            <img src="/images/smiley/hero-smiley.svg" alt="Beige Smiley" />
           </div>
           <div className="kavya hero-box-general">Kavya</div>
         </div>

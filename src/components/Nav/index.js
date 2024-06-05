@@ -15,16 +15,25 @@ function Nav() {
       <div className="nav-container flex-row">
         <div className="logo-container">
           <div className="smiley-green">
-            <img src="/images/logo-smiley-green.svg" alt="Green Smiley" />
+            <img
+              src="/images/smiley/logo-smiley-green.svg"
+              alt="Green Smiley"
+            />
           </div>
           {/* -- */}
           <div className="smiley-beige">
-            <img src="/images/logo-smiley-beige.svg" alt="Beige Smiley" />
+            <img
+              src="/images/smiley/logo-smiley-beige.svg"
+              alt="Beige Smiley"
+            />
           </div>
 
           {/* -- */}
           <div className="smiley-yellow">
-            <img src="/images/logo-smiley-yellow.svg" alt="Yellow Smiley" />
+            <img
+              src="/images/smiley/logo-smiley-yellow.svg"
+              alt="Yellow Smiley"
+            />
           </div>
         </div>
         <div className="nav-items flex-row">
