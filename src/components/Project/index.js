@@ -8,14 +8,14 @@ function Project() {
       <div className="project wrapper">
         <SectionHeading headingText={"Projects"} />
         <div className="flex-row">
-          <div className="previous-btn"></div>
+          <div className="btn btn-prev"></div>
           <div className="project-container">
             <img
               src="/images/project-preview/cheesy-slice.svg"
               alt="Projects Preview"
             />
           </div>
-          <div className="next-btn"></div>
+          <div className="btn btn-next"></div>
         </div>
       </div>
     </StyledProject>

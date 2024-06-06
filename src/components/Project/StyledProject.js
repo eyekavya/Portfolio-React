@@ -6,6 +6,10 @@ export const StyledProject = styled.section`
     margin-top: 20rem;
   }
 
+  .flex-row {
+    justify-content: space-around;
+  }
+
   .project-container img {
     display: block;
     margin: 0 auto;
@@ -13,23 +17,24 @@ export const StyledProject = styled.section`
     width: 40vw;
   }
 
-  .previous-btn {
+  .btn {
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
-    border-right: 50px solid #555;
     border-bottom: 25px solid transparent;
+    cursor: pointer;
+    opacity: 0.8;
   }
 
-  .next-btn {
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-left: 50px solid #555;
-    border-bottom: 25px solid transparent;
+  .btn:hover {
+    opacity: 1;
   }
 
-  .flex-row {
-    justify-content: space-around;
+  .btn-prev {
+    border-right: 50px solid #ababab;
+  }
+
+  .btn-next {
+    border-left: 50px solid #ababab;
   }
 `;
