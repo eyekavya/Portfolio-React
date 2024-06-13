@@ -1,10 +1,12 @@
 import React from "react";
 import { StyledHero } from "./StyledHero";
 import HeroTagline from "../HeroTagline";
+import Nav from "../Nav";
 
 function Hero() {
   return (
     <StyledHero>
+      <Nav />
       <div className="wrapper hero-box-parent">
         <div>
           <div className="hello hero-box-general">Hello there</div>

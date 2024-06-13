@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import parse from "html-react-parser";
 import { StyledSkill } from "./StyledSkill";
 import SectionHeading from "../SectionHeading";
 
@@ -101,7 +100,7 @@ function Skill() {
   return (
     <StyledSkill>
       <div className="skill wrapper">
-        <SectionHeading headingText={parse(`Yes, I do <br /> all this! `)} />
+        <SectionHeading headingText="Yes, I do <br /> all this! " top="-7px" />
         <div className="skill-container">
           <div className="skill-main  flex-row">
             <img

@@ -1,7 +1,8 @@
 import React from "react";
+import parse from "html-react-parser";
 import { StyledSectionHeading } from "./StyledSectionHeading";
 
-function SectionHeading({ headingText = "" }) {
+function SectionHeading({ headingText = "", top = "5px" }) {
   return (
     <StyledSectionHeading headingText={headingText}>
       <div className="heading-container">
@@ -25,11 +26,11 @@ function SectionHeading({ headingText = "" }) {
           className="heading-text"
           style={{
             position: "absolute",
-            top: "-7px",
+            top: top,
             left: "50px",
           }}
         >
-          {headingText}
+          {parse(headingText)}
         </p>
       </div>
     </StyledSectionHeading>
