@@ -8,7 +8,7 @@ function Contact() {
       <div className="contact wrapper">
         <SectionHeading
           headingText="Contact <br /> me"
-          top="=6px"
+          top="-6px"
         ></SectionHeading>
       </div>
     </StyledContact>
