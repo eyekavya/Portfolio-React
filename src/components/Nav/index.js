@@ -8,6 +8,7 @@ function Nav() {
     skills: false,
     projects: false,
     contacts: false,
+    resume: false,
   });
 
   return (
@@ -95,6 +96,27 @@ function Nav() {
                 text="Contacts"
                 showAnnotation={showAnnotation.contacts}
               />
+            </p>
+          </div>
+          <div>
+            <p
+              onMouseEnter={() => {
+                setShowAnnotation({ ...showAnnotation, resume: true });
+              }}
+              onMouseLeave={() => {
+                setShowAnnotation({ ...showAnnotation, resume: false });
+              }}
+            >
+              <a
+                href="https://drive.google.com/file/d/1gdE4s0oVWWYM9NNlpFcVjUncYVJaNGg5/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <CustomRoughNotation
+                  text="Resume"
+                  showAnnotation={showAnnotation.resume}
+                />
+              </a>
             </p>
           </div>
         </div>
