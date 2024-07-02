@@ -93,7 +93,7 @@ function Nav() {
               }}
             >
               <CustomRoughNotation
-                text="Contacts"
+                text="Contact"
                 showAnnotation={showAnnotation.contacts}
               />
             </p>
