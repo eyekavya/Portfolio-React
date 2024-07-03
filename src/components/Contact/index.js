@@ -4,7 +4,7 @@ import SectionHeading from "../SectionHeading";
 
 function Contact() {
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <div className="contact wrapper">
         <SectionHeading
           headingText="Contact <br /> me"

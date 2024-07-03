@@ -39,85 +39,95 @@ function Nav() {
         </div>
         <div className="nav-items flex-row">
           <div>
-            <p
-              onMouseEnter={() => {
-                setShowAnnotation({ ...showAnnotation, about: true });
-              }}
-              onMouseLeave={() => {
-                setShowAnnotation({ ...showAnnotation, about: false });
-              }}
-            >
-              <CustomRoughNotation
-                text="About"
-                showAnnotation={showAnnotation.about}
-              />
-            </p>
-          </div>
-          <div>
-            <p
-              onMouseEnter={() => {
-                setShowAnnotation({ ...showAnnotation, skills: true });
-              }}
-              onMouseLeave={() => {
-                setShowAnnotation({ ...showAnnotation, skills: false });
-              }}
-            >
-              <CustomRoughNotation
-                text="Skills"
-                showAnnotation={showAnnotation.skills}
-              />
-            </p>
-          </div>
-          <div>
-            <p
-              onMouseEnter={() => {
-                setShowAnnotation({ ...showAnnotation, projects: true });
-              }}
-              onMouseLeave={() => {
-                setShowAnnotation({ ...showAnnotation, projects: false });
-              }}
-            >
-              <CustomRoughNotation
-                text="Projects"
-                showAnnotation={showAnnotation.projects}
-              />
-            </p>
-          </div>
-          <div>
-            <p
-              onMouseEnter={() => {
-                setShowAnnotation({ ...showAnnotation, contacts: true });
-              }}
-              onMouseLeave={() => {
-                setShowAnnotation({ ...showAnnotation, contacts: false });
-              }}
-            >
-              <CustomRoughNotation
-                text="Contact"
-                showAnnotation={showAnnotation.contacts}
-              />
-            </p>
-          </div>
-          <div>
-            <p
-              onMouseEnter={() => {
-                setShowAnnotation({ ...showAnnotation, resume: true });
-              }}
-              onMouseLeave={() => {
-                setShowAnnotation({ ...showAnnotation, resume: false });
-              }}
-            >
-              <a
-                href="https://drive.google.com/file/d/1gdE4s0oVWWYM9NNlpFcVjUncYVJaNGg5/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
+            <a href="#about">
+              <p
+                onMouseEnter={() => {
+                  setShowAnnotation({ ...showAnnotation, about: true });
+                }}
+                onMouseLeave={() => {
+                  setShowAnnotation({ ...showAnnotation, about: false });
+                }}
               >
                 <CustomRoughNotation
-                  text="Resume"
-                  showAnnotation={showAnnotation.resume}
+                  text="About"
+                  showAnnotation={showAnnotation.about}
                 />
-              </a>
-            </p>
+              </p>
+            </a>
+          </div>
+          <div>
+            <a href="#skills">
+              <p
+                onMouseEnter={() => {
+                  setShowAnnotation({ ...showAnnotation, skills: true });
+                }}
+                onMouseLeave={() => {
+                  setShowAnnotation({ ...showAnnotation, skills: false });
+                }}
+              >
+                <CustomRoughNotation
+                  text="Skills"
+                  showAnnotation={showAnnotation.skills}
+                />
+              </p>
+            </a>
+          </div>
+          <div>
+            <a href="#projects">
+              <p
+                onMouseEnter={() => {
+                  setShowAnnotation({ ...showAnnotation, projects: true });
+                }}
+                onMouseLeave={() => {
+                  setShowAnnotation({ ...showAnnotation, projects: false });
+                }}
+              >
+                <CustomRoughNotation
+                  text="Projects"
+                  showAnnotation={showAnnotation.projects}
+                />
+              </p>
+            </a>
+          </div>
+          <div>
+            <a href="#contact">
+              <p
+                onMouseEnter={() => {
+                  setShowAnnotation({ ...showAnnotation, contacts: true });
+                }}
+                onMouseLeave={() => {
+                  setShowAnnotation({ ...showAnnotation, contacts: false });
+                }}
+              >
+                <CustomRoughNotation
+                  text="Contact"
+                  showAnnotation={showAnnotation.contacts}
+                />
+              </p>
+            </a>
+          </div>
+          <div>
+            <a href="#resume">
+              <p
+                onMouseEnter={() => {
+                  setShowAnnotation({ ...showAnnotation, resume: true });
+                }}
+                onMouseLeave={() => {
+                  setShowAnnotation({ ...showAnnotation, resume: false });
+                }}
+              >
+                <a
+                  href="https://drive.google.com/file/d/1gdE4s0oVWWYM9NNlpFcVjUncYVJaNGg5/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <CustomRoughNotation
+                    text="Resume"
+                    showAnnotation={showAnnotation.resume}
+                  />
+                </a>
+              </p>
+            </a>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { RoughNotationGroup } from "react-rough-notation";
 
 function About() {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <div className="about flex-row wrapper">
         <div className="desc-container">
           <p>

@@ -11,7 +11,7 @@ function Project() {
     "/images/project-preview/forecastify.svg",
   ];
   return (
-    <StyledProject>
+    <StyledProject id="projects">
       <div className="project wrapper">
         <SectionHeading headingText={"Projects"} />
         <div className="flex-row">

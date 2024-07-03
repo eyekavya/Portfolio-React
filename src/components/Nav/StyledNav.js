@@ -59,9 +59,9 @@ export const StyledNav = styled.section`
       font-size: 16px;
       font-family: "Work Sans", sans-serif;
       font-weight: 500;
-      a {
-        text-decoration: none;
-      }
+    }
+    a {
+      text-decoration: none;
     }
   }
 `;

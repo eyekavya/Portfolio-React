@@ -98,7 +98,7 @@ function Skill() {
     },
   ];
   return (
-    <StyledSkill>
+    <StyledSkill id="skills">
       <div className="skill wrapper">
         <SectionHeading headingText="Yes, I do <br /> all this! " top="-7px" />
         <div className="skill-container">
