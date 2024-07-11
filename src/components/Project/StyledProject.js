@@ -7,14 +7,42 @@ export const StyledProject = styled.section`
   }
 
   .flex-row {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .project-container img {
-    display: block;
+  .screen-container {
+    position: relative;
     margin: 0 auto;
-    height: 40vw;
-    width: 40vw;
+  }
+
+  .desktop-img {
+    margin: 0 auto;
+    img {
+      height: 40rem;
+    }
+  }
+
+  .tablet-img,
+  .mobile-img {
+    position: absolute;
+  }
+
+  .tablet-img {
+    bottom: -20rem;
+    rotate: -2deg;
+    left: 1.5rem;
+    img {
+      height: 28rem;
+    }
+  }
+
+  .mobile-img {
+    bottom: -20rem;
+    left: 46rem;
+    rotate: 5deg;
+    img {
+      height: 34rem;
+    }
   }
 
   .btn {
