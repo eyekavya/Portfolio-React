@@ -3,13 +3,34 @@ import SectionHeading from "../SectionHeading";
 import { StyledProject } from "./StyledProject";
 
 function Project() {
-  // const [projectIndex, setProjectIndex] = useState(0);
+  const [currentProject, setCurrentProject] = useState(0);
 
-  // let projectArray = [
-  //   "/images/project-preview/cheesy-slice.svg",
-  //   "/images/project-preview/shinchan.svg",
-  //   "/images/project-preview/forecastify.svg",
-  // ];
+  let projectArr = [
+    {
+      desktopImg: "/images/project-preview/cheesyslice-desktop.svg",
+      tabletImg: "/images/project-preview/cheesyslice-tablet.svg",
+      mobileImg: "/images/project-preview/cheesyslice-mobile.svg",
+      descImg: "/images/project-preview/cheesyslice-desc.svg",
+      live: "https://cheesyslice.netlify.app/",
+      github: "https://github.com/eyekavya/PizzaApp-React",
+    },
+    {
+      desktopImg: "/images/project-preview/shinchan-desktop.svg",
+      tabletImg: "/images/project-preview/shinchan-tablet.svg",
+      mobileImg: "/images/project-preview/shinchan-mobile.svg",
+      descImg: "/images/project-preview/shinchan-desc.svg",
+      live: "https://kavya-shinchan.netlify.app/",
+      github: "https://github.com/eyekavya/Shinchan-React",
+    },
+    {
+      desktopImg: "/images/project-preview/forecastify-desktop.svg",
+      tabletImg: "/images/project-preview/forecastify-tablet.svg",
+      mobileImg: "/images/project-preview/forecastify-mobile.svg",
+      descImg: "/images/project-preview/forecastify-desc.svg",
+      live: "https://forecastify.netlify.app/",
+      github: "https://github.com/eyekavya/WeatherApp-React",
+    },
+  ];
   return (
     <StyledProject id="projects">
       <div className="project wrapper">
@@ -17,73 +38,71 @@ function Project() {
         <div className="flex-row">
           <div
             className="btn btn-prev"
-            // onClick={() =>
-            //   projectIndex === 0
-            //     ? setProjectIndex(2)
-            //     : setProjectIndex(projectIndex - 1)
-            // }
+            onClick={() =>
+              currentProject === 0
+                ? setCurrentProject(2)
+                : setCurrentProject(currentProject - 1)
+            }
           ></div>
           <div className="screen-container">
-            {/* <img src={projectArray[projectIndex]} alt="Project Preview" /> */}
-
             <div className="desktop">
               <img
-                src="/images/project-preview/cheesyslice-desktop.svg"
-                alt="Cheesy Slice desktop SS"
+                src={projectArr[currentProject].desktopImg}
+                alt="Project preview"
               />
             </div>
             <div className="desktop-hover screen-hover">
               <img
-                src="/images/project-preview/cheesyslice-desc.svg"
-                alt="Cheesy Slice description"
+                src={projectArr[currentProject].descImg}
+                alt="Project description"
               />
             </div>
 
             <div className="tablet">
               <img
-                src="/images/project-preview/cheesyslice-tablet.svg"
-                alt="Cheesy Slice tablet SS"
+                src={projectArr[currentProject].tabletImg}
+                alt="Project preview"
               />
             </div>
             <div className="tablet-hover screen-hover">
               <a
-                href="https://cheesyslice.netlify.app/"
+                href={projectArr[currentProject].live}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   src="/images/project-preview/host-tablet.svg"
-                  alt="Cheesy Slice live project link"
+                  alt="Live project link"
                 />
               </a>
             </div>
 
             <div className="mobile">
               <img
-                src="/images/project-preview/cheesyslice-mobile.svg"
-                alt="Cheesy Slice mobile SS"
+                src={projectArr[currentProject].mobileImg}
+                alt="Project preview"
               />
             </div>
             <div className="mobile-hover screen-hover">
               <a
-                href="https://github.com/eyekavya/PizzaApp-React"
+                href={projectArr[currentProject].github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   src="/images/project-preview/github-mobile.svg"
-                  alt="Cheesy Slice GitHub Repository link"
+                  alt="Project GitHub Repository link"
                 />
               </a>
             </div>
           </div>
           <div
             className="btn btn-next"
-            // onClick={() =>
-            //   projectIndex < projectArray.length - 1
-            //     ? setProjectIndex(projectIndex + 1)
-            //     : setProjectIndex(0)
-            // }
+            onClick={() =>
+              currentProject < projectArr.length - 1
+                ? setCurrentProject(currentProject + 1)
+                : setCurrentProject(0)
+            }
           ></div>
         </div>
       </div>
