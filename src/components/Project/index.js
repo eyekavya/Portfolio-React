@@ -46,10 +46,16 @@ function Project() {
               />
             </div>
             <div className="tablet-hover screen-hover">
-              <img
-                src="/images/project-preview/host-tablet.svg"
-                alt="Cheesy Slice live project link"
-              />
+              <a
+                href="https://cheesyslice.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/project-preview/host-tablet.svg"
+                  alt="Cheesy Slice live project link"
+                />
+              </a>
             </div>
 
             <div className="mobile">
@@ -59,10 +65,16 @@ function Project() {
               />
             </div>
             <div className="mobile-hover screen-hover">
-              <img
-                src="/images/project-preview/github-mobile.svg"
-                alt="Cheesy Slice GitHub Repository link"
-              />
+              <a
+                href="https://github.com/eyekavya/PizzaApp-React"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/project-preview/github-mobile.svg"
+                  alt="Cheesy Slice GitHub Repository link"
+                />
+              </a>
             </div>
           </div>
           <div

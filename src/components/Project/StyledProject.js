@@ -29,8 +29,9 @@ export const StyledProject = styled.section`
     opacity: 0;
   }
 
-  .screen-hover:hover {
+  .screen-container:hover .screen-hover {
     opacity: 1;
+    transition: all 0.5s ease;
   }
 
   .tablet,
