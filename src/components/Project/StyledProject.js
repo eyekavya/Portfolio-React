@@ -15,20 +15,34 @@ export const StyledProject = styled.section`
     margin: 0 auto;
   }
 
-  .desktop-img {
+  .desktop,
+  .desktop-hover {
     margin: 0 auto;
     img {
       height: 40rem;
     }
   }
 
-  .tablet-img,
-  .mobile-img {
+  .screen-hover {
     position: absolute;
+    bottom: 0rem;
+    opacity: 0;
   }
 
-  .tablet-img {
+  .screen-hover:hover {
+    opacity: 1;
+  }
+
+  .tablet,
+  .mobile,
+  .tablet-hover,
+  .mobile-hover {
+    position: absolute;
     bottom: -20rem;
+  }
+
+  .tablet,
+  .tablet-hover {
     rotate: -2deg;
     left: 1.5rem;
     img {
@@ -36,8 +50,8 @@ export const StyledProject = styled.section`
     }
   }
 
-  .mobile-img {
-    bottom: -20rem;
+  .mobile,
+  .mobile-hover {
     left: 46rem;
     rotate: 5deg;
     img {
