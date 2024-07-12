@@ -53,11 +53,15 @@ export const StyledNav = styled.section`
       cursor: pointer;
     }
 
-    p {
+    p,
+    p a {
       color: #8ad2ff;
       font-size: 16px;
       font-family: "Work Sans", sans-serif;
       font-weight: 500;
+    }
+    a {
+      text-decoration: none;
     }
   }
 `;

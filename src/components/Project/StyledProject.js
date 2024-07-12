@@ -7,14 +7,57 @@ export const StyledProject = styled.section`
   }
 
   .flex-row {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .project-container img {
-    display: block;
+  .screen-container {
+    position: relative;
     margin: 0 auto;
-    height: 40vw;
-    width: 40vw;
+  }
+
+  .desktop,
+  .desktop-hover {
+    margin: 0 auto;
+    img {
+      height: 40rem;
+    }
+  }
+
+  .screen-hover {
+    position: absolute;
+    bottom: 0rem;
+    opacity: 0;
+  }
+
+  .screen-container:hover .screen-hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .tablet,
+  .mobile,
+  .tablet-hover,
+  .mobile-hover {
+    position: absolute;
+    bottom: -20rem;
+  }
+
+  .tablet,
+  .tablet-hover {
+    rotate: -2deg;
+    left: 1.5rem;
+    img {
+      height: 28rem;
+    }
+  }
+
+  .mobile,
+  .mobile-hover {
+    left: 46rem;
+    rotate: 5deg;
+    img {
+      height: 34rem;
+    }
   }
 
   .btn {
