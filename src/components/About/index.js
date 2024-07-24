@@ -42,7 +42,9 @@ function About() {
               <img src="/images/tcs-logo.svg" alt="TCS Logo" />
             </a>
           </p>
-          <HireMeBtn />
+          <div className="hireme">
+            <HireMeBtn />
+          </div>
         </div>
         <div className="photo-container">
           <img src="/images/kavya/me-blob-strokes-final.svg" alt="My Snap" />

@@ -4,7 +4,14 @@ import { StyledHireMeBtn } from "./StyledHireMeBtn";
 function HireMeBtn() {
   return (
     <StyledHireMeBtn>
-      <button className="hireme">Hire Me</button>
+      <button
+        className="hireme"
+        onClick={(e) => {
+          window.location.href = "mailto:eyekavya@outlook.com";
+        }}
+      >
+        Hire Me
+      </button>
     </StyledHireMeBtn>
   );
 }

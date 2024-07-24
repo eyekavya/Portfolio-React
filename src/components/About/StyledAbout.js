@@ -7,12 +7,12 @@ export const StyledAbout = styled.section`
     margin: 0 auto;
   }
   .desc-container p {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #fdf6ee;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .desc-container img {
     width: 4rem;
@@ -24,5 +24,9 @@ export const StyledAbout = styled.section`
     object-fit: cover;
     object-position: right;
     width: 50rem;
+  }
+  .hireme {
+    text-align: center;
+    margin-top: 2rem;
   }
 `;
