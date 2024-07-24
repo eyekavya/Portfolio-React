@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledContact } from "./StyledContact";
 import SectionHeading from "../SectionHeading";
+import HireMeBtn from "../HireMeBtn";
 
 function Contact() {
   return (
@@ -10,6 +11,7 @@ function Contact() {
           headingText="Contact <br /> me"
           top="-6px"
         ></SectionHeading>
+        <HireMeBtn />
       </div>
     </StyledContact>
   );

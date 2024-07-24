@@ -2,6 +2,7 @@ import React from "react";
 import { StyledAbout } from "./StyledAbout";
 import CustomRoughNotation from "../CustomRoughNotation";
 import { RoughNotationGroup } from "react-rough-notation";
+import HireMeBtn from "../HireMeBtn";
 
 function About() {
   return (
@@ -24,15 +25,15 @@ function About() {
                 order={2}
                 multiline={true}
               />
-              based in India, fueled by ideas and coffee. In the world of code
-              and pixels, I bring
+              With more than 3 years of experience, I bring
               <CustomRoughNotation
                 text=" creativity "
                 type="circle"
                 color="#F9D34C"
                 order={3}
               />
-              to life.
+              to life in the world of code and pixels. I've worked extensively
+              in the BFSI sector.
             </RoughNotationGroup>
           </p>
           <p>
@@ -41,6 +42,7 @@ function About() {
               <img src="/images/tcs-logo.svg" alt="TCS Logo" />
             </a>
           </p>
+          <HireMeBtn />
         </div>
         <div className="photo-container">
           <img src="/images/kavya/me-blob-strokes-final.svg" alt="My Snap" />
