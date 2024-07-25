@@ -33,7 +33,14 @@ function About() {
                 order={3}
               />
               to life in the world of code and pixels. I've worked extensively
-              in the BFSI sector.
+              in the
+              <CustomRoughNotation
+                text=" BFSI sector"
+                color="#F9D34C"
+                order={4}
+                multiline={true}
+              />
+              .
             </RoughNotationGroup>
           </p>
           <p>

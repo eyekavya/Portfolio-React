@@ -12,7 +12,7 @@ export const StyledAbout = styled.section`
     color: #fdf6ee;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   .desc-container img {
     width: 4rem;
